@@ -1,0 +1,21 @@
+function palindrome(str) {
+  str = str.toLowerCase();
+  let newArr = [];
+  const regex = /[\W_]/;
+  let splArr = str.split("");
+  for(let item in splArr){
+    if(!regex.test(splArr[item])){
+      newArr.push(splArr[item]);
+    }
+  }
+  console.log(newArr);
+  let checkArr = [];
+  for(let item in newArr){
+    checkArr.unshift(newArr[item]);
+  }
+  console.log(checkArr);
+
+  return newArr.join("")==checkArr.join("");
+}
+
+console.log(palindrome("eyes"));

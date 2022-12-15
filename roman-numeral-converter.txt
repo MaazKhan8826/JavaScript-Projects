@@ -1,0 +1,49 @@
+function convertToRoman(num) {
+  const alph = {
+    1000 : 'M',
+    900 : 'CM',
+    500: 'D',
+    400 : 'CD',
+    100 : 'C',
+    90 : 'XC',
+    50 : 'L',
+    40 : 'XL',
+    10 : 'X',
+    9 : 'IX',
+    5 : 'V',
+    4 : 'IV',
+    1 : 'I',
+  }
+  const newArr = Object.keys(alph);
+  let p = num;
+  let finArr = [];
+  
+  for(let i=0; p>0;){
+    for(let i=0; i<newArr.length; i++){
+      if(newArr[i]<=p&&newArr[i+1]>p||newArr.length-i==1){
+        for(let j=1; j<=3 && p>=newArr[i]; j++){
+          finArr.push(newArr[i]);
+          p-=newArr[i];
+        }
+      } 
+    }
+  }
+
+  let printArr = finArr.map(x=>alph[x]);
+  return printArr.join("")
+}
+
+convertToRoman(16);
+
+/* let newNum = num.toString().split("");
+  let p=1*Math.pow(10,newNum.length-1);
+  let finArr = [];
+  
+  for(let x in newNum){
+    newNum[x] = parseInt(newNum[x])*p;
+    p/=10;
+  }
+
+  for(let x in newArr){
+    newArr[x]=parseInt(newArr[x]);
+  } */
