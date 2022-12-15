@@ -1,8 +1,6 @@
 function rot13(str) {
   let chars = str.split("");
 
-//charcode range is 65 to 90
-
   for(let elem in chars){
     if(/[\w]/.test(chars[elem])){
       let codeCheck = chars[elem].charCodeAt(0);
