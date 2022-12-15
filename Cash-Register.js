@@ -1,3 +1,8 @@
+/*
+A function that takes in three parameters: price of the item purchased, cash given by customer and a set of arrays representing the cash in the register.
+It then returns three different results based on the availability of cash and the ability to procure change.
+*/
+
 function checkCashRegister(price, cash, cid) {
   let cashToReturn = parseFloat(cash - price.toFixed(2));
   let cur = {
@@ -45,28 +50,4 @@ function checkCashRegister(price, cash, cid) {
 }
 
 
-console.log(checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]));
-
-/* if (i==0){
-        let givenChange = 0.00;
-        while(newCash[i][2]<=parseFloat(cashToReturn.toFixed(2))){
-          givenChange = givenChange+newCash[i][2];
-          cashToReturn = parseFloat(cashToReturn - newCash[i][2].toFixed(2));
-          newCash[i][1] = parseFloat(newCash[i][1]-newCash[i][2].toFixed(2));
-        }
-        change.push([newCash[i][0],parseFloat(givenChange.toFixed(2))]);
-      } */
-
-      /* while(parseFloat(cashToReturn.toFixed(2))>=0.1){
-    for(let i=newCash.length-1; i>=0; i--){
-      if((newCash[i][2]<=cashToReturn && newCash[i][1]>0)){
-        let givenChange = 0.00;
-        while(newCash[i][2]<=parseFloat(cashToReturn.toFixed(2)) && newCash[i][1]>0){
-          givenChange = givenChange+newCash[i][2];
-          cashToReturn = parseFloat(cashToReturn - newCash[i][2].toFixed(2));
-          newCash[i][1] = parseFloat(newCash[i][1]-newCash[i][2].toFixed(2));
-        }
-        change.push([newCash[i][0],parseFloat(givenChange.toFixed(2))]);
-      } 
-    }
-  } */
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
