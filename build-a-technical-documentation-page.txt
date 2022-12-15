@@ -1,0 +1,279 @@
+** start of undefined **
+
+<!Doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <!-- This is the navbar, we will use it to navigate through the whole page. Also, it needs to be relative to the main section of the page. -->
+    <nav id='navbar'>
+      <header><h1>Python</h1></header>
+      <ul>
+      <a class='nav-link' href='#Introduction_to_Python'>
+        <li>Introduction to Python</li>
+      </a>
+      <a class='nav-link' href='#Uses_of_Python'>
+        <li>Uses of Python</li>
+      </a>
+      <a class='nav-link' href='#Advantages_of_Python'>
+        <li>Advantages of Python</li>
+      </a>
+      <a class='nav-link' href='#Comparison_to_Others'>
+        <li>Comparison to Others</li>
+      </a>
+      <a class='nav-link' href='#Python_Syntax'>
+        <li>Python Syntax</li>
+      </a>
+      <a class='nav-link' href='#Python_Indentation'>
+        <li>Python Indentation</li>
+      </a>
+      <a class='nav-link' href='#Python_Variables'>
+        <li>Python Variables</li>
+      </a>
+      <a class='nav-link' href='#Python_Comments'>
+        <li>Python Comments</li>
+      </a>
+      </ul>
+    </nav>
+<!-- This is the section where all the content will go. -->
+    <main id='main-doc'>
+<!-- This section is where we introduce python -->
+      <section class='main-section' id='Introduction_to_Python'>
+        <header><h2>Introduction to Python</h2></header>
+        <p>Python is a class='nav-link' popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <p>
+          It is used for:
+        <ul>
+          <li>web development (server-side)</li>
+          <li>software development</li>
+          <li>mathematics</li>
+          <li>system scripting</li>
+        </ul>
+        </p>
+      </section>
+<!-- This sections defines the uses of python -->      
+      <section class='main-section' id='Uses_of_Python'>
+        <header><h2>Uses of Python</h2></header>
+        <p>
+          <ul>
+            <li>Python can be used on a class='nav-link' server to create web applications.
+</li>
+            <li>Python can be used alongside software to create workflows.
+</li>
+            <li>Python can connect to database systems. It can also read and modify files.
+</li>
+            <li>Python can be used to handle big data and perform complex mathematics.
+</li>
+          </ul>
+        </p>
+      </section>
+<!--This section is where we give advantages-->
+      <section class='main-section' id='Advantages_of_Python'>
+        <header><h2>Advantages of Python</h2></header>
+        <p>
+          <ul>
+            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+</li>
+            <li>Python has a class='nav-link' simple syntax similar to the English language.
+</li>
+            <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+</li>
+            <li>Python can be treated in a class='nav-link' procedural way, an object-oriented way or a class='nav-link' functional way.
+</li>
+          </ul>
+        </p>
+      </section>
+<!--This section is where we give comparisons with others-->      
+      <section class='main-section' id='Comparison_to_Others'>
+        <header><h2>Comparison to Others</h2></header>
+        <p>
+          <ul>
+            <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+</li>
+            <li>Python uses new lines to complete a class='nav-link' command, as opposed to other programming languages which often use semicolons or parentheses.
+</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+</li>
+          </ul>
+        </p>
+      </section>
+<!--This section is where we give the syntax for Python-->      
+      <section class='main-section' id='Python_Syntax'>
+        <header><h2>Python Syntax</h2></header>
+        <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+        <code>>>> print("Hello, World!")<br>Hello, World!</code>
+        <p>Or by creating a class='nav-link' python file on the server, using the .py file extension, and running it in the Command Line:</p>
+        <code>C:\Users\Your Name>python myfile.py</code>
+      </section>
+<!--Here we give the indentations-->      
+      <section class='main-section' id='Python_Indentation'>
+        <header><h2>Python Indentation</h2></header>
+        <p>Indentation refers to the spaces at the beginning of a class='nav-link' code line.
+<br><br>
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+<br><br>
+Python uses indentation to indicate a class='nav-link' block of code.</p>
+        <code>if 5 > 2:<br>print("Five is greater than two!")</code>
+      </section>
+<!--Here we give the variables-->      
+      <section class='main-section' id='Python_Variables'>
+        <header><h2>Python Variables</h2></header>
+        <p>Python has no command for declaring a class='nav-link' variable.
+          <br><br>
+          In Python, variables are created when you assign a class='nav-link' value to it:
+        </p>
+        <code>x = 5<br>y = "Hello, World!"</code>
+      </section>
+<!--Here we talk about comments in Python-->      
+      <section class='main-section' id='Python_Comments'>
+        <header><h2>Python Comments</h2></header>
+        <p>Python has commenting capability for the purpose of in-code documentation.
+<br><br>
+Comments start with a class='nav-link' #, and Python will render the rest of the line as a class='nav-link' comment:</p>
+        <code><span class='comment'>#This is a class='nav-link' comment.</span><br>print("Hello, World!")</code>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  font-family: "tahoma", sans-serif;
+  background-color: #7c9b6e;
+  color: black;
+}
+
+@media only screen and (max-width: 750px){
+  #navbar{
+    position: absolute !important;
+    top: 0;
+    width: 100% !important;
+    max-height: 275px;
+    margin: 0;
+    border: none !important;
+    border-bottom: solid !important;
+    border-color: white !important;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 -8px 25px -20px black inset !important;
+  }
+
+  #navbar header{
+    text-align: center;
+    font-size: 1.4rem !important;
+  }
+
+  #main-doc{
+    position: relative !important;
+    margin-left: 0 !important;
+    margin-top: 310px;
+
+  }
+
+  #navbar ul{
+    height: 180px;
+    font-size: 1.1rem !important;
+    border-top: solid !important;
+    border-color: white !important;
+  }
+}
+
+#navbar{
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 290px;
+  background-color: #7c9b6e;
+  box-shadow: -10px 0 28px -20px black inset;
+}
+
+#navbar a{
+  text-decoration: none;
+  color: inherit; 
+}
+
+#navbar header{
+  text-align: center;
+  border-bottom: 1.2px solid white;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  letter-spacing: 5px;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 20px;
+  margin: 0 0 0 -40px;
+  border-bottom: 1.2px solid white;
+}
+
+#navbar ul{
+  margin-top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1.2rem;
+}
+
+nav{
+  display: block;
+}
+
+main{
+  display: block;
+}
+
+#main-doc{
+  position: absolute;
+  margin-left: 310px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+#main-doc ul{
+  margin-left: -5px;
+}
+
+#main-doc p{
+  margin-left: 10px;
+}
+
+#main-doc code{
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 50%;
+  background-color: #196c49;
+  padding: 8px 10% 8px 10%;
+  color: white;
+}
+
+#main-doc section:last-of-type{
+  margin-bottom: 50px;
+}
+
+#navbar li:hover{
+  background-color: #7ca46e;
+  cursor: pointer;
+}
+
+header{
+  color: #1f4d39;
+}
+
+** end of undefined **
+

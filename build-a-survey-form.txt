@@ -1,0 +1,124 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Music Form</title>
+      <meta charset='UTF-8'>
+      <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <h1 id='title'>Music Preference Survey</h1>
+    <p id='description'>We would like to know your love for HipHop!</p>
+    <form id='survey-form' action='music.txt'>
+      <fieldset>
+        <label for='name' id='name-label'>Name<input id='name' type='text' placeholder='Enter your name' required /></label>
+        <label for='email' id='email-label'>Email<input id='email' type='email' placeholder='Enter your Email' required /></label>
+        <label for='number' id='number-label'>Age<input id='number' type='number' min='12' max='120' placeholder='Age' /></label>
+      </fieldset>
+      <fieldset>
+        <label>Are you a fan of HipHop music?</label>
+        <label><input name='hiphop-fan' type='radio' name='hiphop-fan' value='yes' /> Yes</label>
+        <label><input name='hiphop-fan' type='radio' name='hiphop-fan' value='no' /> No</label>
+      </fieldset>
+      <fieldset>
+        Who is your favorite artist?
+        <select id='dropdown'>
+          <option name='fav-artist' value=''>Select an option</option>
+          <option name='fav-artist'>Kanye West</option>
+          <option name='fav-artist'>Jay-Z</option>
+          <option name='fav-artist'>Eminem</option>
+          <option name='fav-artist'>Kendrick Lamar</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        Have you listened to the following classic songs?
+        <label><input name='classic-songs' type='checkbox' value='1' /> Niggas in Paris</label>
+        <label><input name='classic-songs' type='checkbox'  value='2' /> Lose Yourself</label>
+        <label><input name='classic-songs' type='checkbox'  value='3' /> Power</label>
+        <label><input name='classic-songs' type='checkbox'  value='4' /> Bounce</label>
+        <label><input name='classic-songs' type='checkbox'  value='5' /> Money Trees</label>
+      </fieldset>
+      <fieldset>
+        What do you like about HipHop?
+        <textarea rows='6' placeholder='Enter your likings here...'></textarea>
+      </fieldset>
+      <button type='submit' id='submit'>Submit</button>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1,p {
+  text-align: center;
+}
+
+label,#name,#email,#number,textarea,select {
+  display: block;
+}
+
+input[type='radio'],input[type='checkbox'] {
+  vertical-align: middle;
+  margin-top: -1px
+}
+
+select,input,label,textarea {
+  margin: 10 0 0 0;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 40px 80px 40px 80px;
+  padding: 20px 10px;
+}
+
+#name,#email,#number,select {
+  height: 2rem;
+}
+
+#name,#email,#number,select,textarea {
+  width: 100%;
+}
+
+body {
+  background-color: #0471A6;
+  color: rgb(248,238,247);
+  padding-top: 20px;
+  font-family: sans-serif,serif,monospace;
+  font-size: 1rem;
+}
+
+form {
+  background-color: #3685B5;
+}
+
+button {
+  margin-left: 10%; 
+  width: 80%;
+  height: 30px; 
+  font-size: 1rem;
+  background-color: #B4ADEA;
+  border-color: #B4ADEA;
+  color: white;
+}
+
+select,input,textarea {
+  background-color: #81B8D9;
+  color: white;
+  border-color: #81B8D9;
+  border: 0;
+}
+
+::placeholder {
+  color: rgb(247,245,245);
+}
+
+** end of undefined **
+

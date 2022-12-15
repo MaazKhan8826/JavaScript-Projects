@@ -1,0 +1,190 @@
+** start of undefined **
+
+<!Doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href='styles.css' rel='stylesheet'>
+  <title>
+    Tribute to Steve Jobs
+  </title>
+</head>
+<body>
+  <main id='main'>
+    <div id='heading'>
+      <h1 id='title'>Tribute to, <span class='diff-col'>Steve Jobs</span></h1>
+      <!-- <p id='title'>The man who changed everything.</p> -->
+    </div>
+    <div id='total-img'>
+    <div id='img-div'>
+      <img src='https://cdn.profoto.com/cdn/053149e/contentassets/d39349344d004f9b8963df1551f24bf4/profoto-albert-watson-steve-jobs-pinned-image-original.jpg?width=1280&quality=75&format=jpg' alt='Steve Jobs' id='image'>
+    <div id='img-caption'>
+      <p>*An image of Steve Jobs for the cover of his Biography.</p>
+    </div>
+    </div>
+    <div id='quote'>
+      <p class='italic'>"Innovation distinguishes between a leader and a follower."
+      </p>
+      <span class='align-right'>~Steve Jobs</span>
+    </div>
+    </div>
+    <div id='tribute'>
+      <h2 class='about'>About</h2>
+      <p id='tribute-info'>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.
+<br><br>
+Jobs was born in San Francisco to a Syrian father and German-American mother. He was adopted shortly after his birth. Jobs attended Reed College in 1972 before withdrawing that same year. In 1974, he traveled through India seeking enlightenment and studying Zen Buddhism. He and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with production and sale of the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics.</p>
+    </div>
+    <div id='linker'>
+      <a href='https://en.wikipedia.org/wiki/Steve_Jobs' target='_blank' id='tribute-link'>
+        <p>
+          Learn more about him here
+        </p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: "Tahoma", sans-serif;
+}
+
+main,body{
+  background-color: D7CDCC;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: 8px auto;
+  width: 80%;
+  align-items: center;
+  display: block;
+}
+
+#img-div{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#quote{
+  margin-bottom: 20px;
+  width: 550px;
+  max-width: 80%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0px auto 30px auto;
+  padding-bottom: 20px;
+}
+
+#total-img{
+  max-width: 550px;
+  background-color: #BAB1AF;
+  margin: 0px auto;
+}
+
+#img-caption{
+  color: #102020;
+  font-size: 11px;
+  width: 80%;
+  margin: 3px auto;
+}
+
+#img-caption p{
+  margin: 2px;
+}
+
+.diff-col{
+  color: #605B56;
+}
+
+#img-div{
+  padding-top: 30px;
+}
+
+#heading {
+  text-align: center;
+  }
+
+h1 {
+  font-size: 250%;
+}
+
+#title{
+  margin: 20px auto;
+}
+
+.italic{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 19px;
+}
+
+.align-right{
+  float: right;
+  font-size: 1.1rem;
+  margin-top: 0;
+  padding-right: 25px;
+  padding-top: 0;
+}
+
+/*#quote {
+  margin: 0px auto 50px auto;
+  max-width: 500px;
+  width: 79%;
+  padding: 10px 10px 10px 10px;
+  background-color: #BAB1AF;
+}*/
+
+#tribute {
+  margin: 10px auto;
+  width: 80%; 
+}
+
+#tribute-info{
+  font-size: 110%;
+}
+
+#linker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+#tribute-link{
+  background-color: #2A2928;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: white;  
+}
+
+#tribute-link:hover{
+  background-color: #403D2B;
+  color: white;
+  cursor: pointer;
+}
+
+#image:hover{
+  filter: blur(px);
+}
+
+.about{
+  text-align: center;
+  color: #e4e8fa;
+}
+
+#tribute{
+  background-color: #7E7874;
+  padding: 4px 25px 10px 25px;
+}
+
+** end of undefined **
+
